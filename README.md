@@ -1,5 +1,8 @@
 # resty-digest_auth
 
+This project provides lua implemetation of HTTP Digest access control using out-of-box OpenResty compenents only, and strives to minimize the dependency of 3pp middlewares, only Redis and MySQL is optionally required. You can take out MySQL if you don't need to store username-password in RMDBS, You can event compromise the anti-replay-attack feature to get rid of Redis, although it is HIGHLY not recommended.
+Tested under OpenResty 1.13.6.2
+
 ## lua/digest_access.lua
 A partial implementation of HTTP digest access authentitcation according to RFC2617.
 Use base64 encoded timestamp ngx.now() as nonce, so that server can expire a session
