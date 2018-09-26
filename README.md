@@ -1,4 +1,4 @@
-# resty-digest_auth
+# resty-digest-auth
 
 This project provides lua implemetation of HTTP Digest access control using out-of-box OpenResty compenents only, and strives to minimize the dependency of 3pp middlewares, only Redis and MySQL is optionally required. You can take out MySQL if you don't need to store username-password in RMDBS, You can even compromise the anti-replay-attack feature to get rid of Redis, although it is HIGHLY not recommended.
 Tested under OpenResty 1.13.6.2
